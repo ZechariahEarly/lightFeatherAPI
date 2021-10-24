@@ -5,9 +5,6 @@ public class Manager {
     private String identificationNumber;
     private String firstName;
     private String lastName;
-    private String email;
-    private String supervisor;
-    private String phoneNumber;
 
     public Manager(String id, String phone, String jurisdiction, String identificationNumber, String firstName, String lastName){
         this.id = id;
@@ -16,20 +13,6 @@ public class Manager {
         this.identificationNumber = identificationNumber;
         this.firstName = firstName;
         this.lastName = lastName;
-    }
-
-    public Manager(String firstName, String lastName, String email, String phoneNumber, String supervisor){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.supervisor = supervisor;
-    }
-
-    public Manager(String firstName, String lastName, String supervisor){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.supervisor = supervisor;
     }
 
     public String getId() {
@@ -78,29 +61,5 @@ public class Manager {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSupervisor() {
-        return supervisor;
-    }
-
-    public void setSupervisor(String supervisor) {
-        this.supervisor = supervisor;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
     }
 }
