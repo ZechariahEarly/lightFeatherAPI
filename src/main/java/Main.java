@@ -28,14 +28,14 @@ public class Main {
 
     public static void main(String[] args) throws Exception
     {
-        if(args[0].equals("GET/api/supervisors")) {
+        if(args[0].equals("GET/api/managers")) {
             List<String> managers = (ArrayList<String>) new GetHandler().organizedManagers();
             for (String manager : managers) {
                 System.out.println(manager);
             }
         }
         else if(args[0].equals("POST/api/submit")){
-
+            new PostHandler().sendPOST(args[1]);
         }
     }
 }
